@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBSeaFoodModelStoreContainer" CdmEntityContainer="DBSeaFoodEntities">
+    <EntitySetMapping Name="AdminUsers">
+      <EntityTypeMapping TypeName="DBSeaFoodModel.AdminUser">
+        <MappingFragment StoreEntitySet="AdminUser">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+          <ScalarProperty Name="RoleUser" ColumnName="RoleUser" />
+          <ScalarProperty Name="PasswordUser" ColumnName="PasswordUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="DBSeaFoodModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="DBSeaFoodModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="IDCus" ColumnName="IDCus" />
+          <ScalarProperty Name="NameCus" ColumnName="NameCus" />
+          <ScalarProperty Name="PhoneCus" ColumnName="PhoneCus" />
+          <ScalarProperty Name="EmailCus" ColumnName="EmailCus" />
+          <ScalarProperty Name="PasswordCus" ColumnName="PasswordCus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="DBSeaFoodModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDProduct" ColumnName="IDProduct" />
+          <ScalarProperty Name="IDOrder" ColumnName="IDOrder" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderProes">
+      <EntityTypeMapping TypeName="DBSeaFoodModel.OrderPro">
+        <MappingFragment StoreEntitySet="OrderPro">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DateOrder" ColumnName="DateOrder" />
+          <ScalarProperty Name="IDCus" ColumnName="IDCus" />
+          <ScalarProperty Name="AddressDeliverry" ColumnName="AddressDeliverry" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="DBSeaFoodModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="Dish" ColumnName="Dish" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ImageProduct1" ColumnName="ImageProduct1" />
+          <ScalarProperty Name="ImageProduct2" ColumnName="ImageProduct2" />
+          <ScalarProperty Name="ImageProduct3" ColumnName="ImageProduct3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
